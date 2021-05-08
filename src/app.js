@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 
+const path = require('path');
+
 // allow app to use our environment variables
 const dotenv = require('dotenv');
 dotenv.config();
@@ -22,6 +24,18 @@ app.use(express.json());
 
 // setup api endpoint routes
 app.use('/api/v1/user', userRoutes);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Send the public html page on home route.
+app.get('/', (req, res) => {
+  res.type('html').sendFile(path.join(`${__dirname}/public/index.html`));
+});
+
+// Send the public html page on home api route.
+app.get('/api/v1', (req, res) => {
+  res.redirect('/');
+});
 
 // set app to listen to specified PORT
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
