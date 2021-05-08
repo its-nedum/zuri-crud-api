@@ -18,7 +18,7 @@ $ npm i
 $ npm start
 ```
 
-## Folder Structure
+## Code Structure
 ```bash
 │
 ├── /src
@@ -81,3 +81,4 @@ $ npm start
     </tbody>
 </table>
 
+## Sample Inputs and Expected Outputs
