@@ -16,6 +16,8 @@ $ npm i
 
 # start the api server
 $ npm start
+
+# Don't forget to create a .env file using the .env.example file
 ```
 
 ## Code Structure
@@ -30,7 +32,9 @@ $ npm start
 │   │
 │   ├── /models
 │   │   └── user.js
-│   │
+│   ├── /public
+│   │   ├── /css
+│   │   └── index.html
 │   ├── /routes
 │   │   └── users.js
 │   │
@@ -86,21 +90,21 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
 
 ## Sample Inputs and Expected Outputs
 - Create a user 
-    - POST => [https://zuri-api.herokuapp.com/api/v1/user/create]
+    - POST => [https://zuri-api.herokuapp.com/api/v1/user/create](https://zuri-api.herokuapp.com)
     ![create a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/create_a_user_jkqa3a.png)
 
 - Get a user
-    - GET => [https://zuri-api.herokuapp.com/api/v1/user/get/:id]
+    - GET => [https://zuri-api.herokuapp.com/api/v1/user/get/:id](https://zuri-api.herokuapp.com)
     ![get a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/get_a_user_ix6kd0.png)
 
 - Get all users
-    - GET => [https://zuri-api.herokuapp.com/api/v1/user/getAll]
+    - GET => [https://zuri-api.herokuapp.com/api/v1/user/getAll](https://zuri-api.herokuapp.com/api/v1/user/getAll)
     ![get all users image](https://res.cloudinary.com/its-nedum/image/upload/v1620495459/zuri/get_all_user_ls24v8.png)
 
 - Update a user
-    - PUT => [https://zuri-api.herokuapp.com/api/v1/user/update/:id]
+    - PUT => [https://zuri-api.herokuapp.com/api/v1/user/update/:id](https://zuri-api.herokuapp.com)
     ![update a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/update_a_user_g1go2o.png)
 
 - Delete a user
-    - DELETE => [https://zuri-api.herokuapp.com/api/v1/user/destroy/:id]
+    - DELETE => [https://zuri-api.herokuapp.com/api/v1/user/destroy/:id](https://zuri-api.herokuapp.com)
     ![delete a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/delete_a_user_lzqp2w.png)
