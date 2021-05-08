@@ -117,7 +117,7 @@ const getAllUsers = async (req, res) => {
         const users = await getAll();
 
         // this will execute if no user is found
-        if (!users) {
+        if (!users || users.length === 0) {
             return res.status(404).json({
                 message: 'Users not found'
             });
