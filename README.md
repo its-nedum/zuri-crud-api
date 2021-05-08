@@ -88,7 +88,7 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
     </tbody>
 </table>
 
-## Sample Inputs and Expected Outputs
+## API Testing with Postman
 - Create a user 
     - POST => [https://zuri-api.herokuapp.com/api/v1/user/create](https://zuri-api.herokuapp.com)
     ![create a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/create_a_user_jkqa3a.png)
