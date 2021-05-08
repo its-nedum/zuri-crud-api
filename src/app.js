@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 
+// import the node.js path module
 const path = require('path');
 
 // allow app to use our environment variables
@@ -22,9 +23,10 @@ const userRoutes = require('./routes/users');
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// setup api endpoint routes
+// setup user api endpoint routes
 app.use('/api/v1/user', userRoutes);
 
+// set static path to public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Send the public html page on home route.
