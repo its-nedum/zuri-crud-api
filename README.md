@@ -1,26 +1,38 @@
 # Zuri CRUD API
+
 This is a CRUD rest api application with mongoDB database.
 
 ## Install and Use
+
 Start by cloning this repository
 
 ```sh
 # HTTPS
 $ git clone https://github.com/its-nedum/zuri-crud-api.git
 ```
+
 then
 
 ```sh
 # cd into project root and install dependencies
 $ npm i
+```
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file following the sample in the .env.example file
+
+`DB_URI`
+
+## Start Server
+
+```sh
 # start the api server
 $ npm start
-
-# Don't forget to create a .env file using the .env.example file
 ```
 
 ## Code Structure
+
 ```bash
 │
 ├── /src
@@ -50,9 +62,11 @@ $ npm start
 └── package.json
 ```
 ## Hosting
+
 The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.herokuapp.com)
 
 ## API Routes
+
 <table>
 	<thead>
 		<th>HTTP VERB</th>
@@ -88,7 +102,7 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
     </tbody>
 </table>
 
-## API Testing with Postman
+## API Testing with Postman - Screenshots
 - Create a user 
     - POST => [https://zuri-api.herokuapp.com/api/v1/user/create](https://zuri-api.herokuapp.com)
     ![create a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/create_a_user_jkqa3a.png)
@@ -108,3 +122,14 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
 - Delete a user
     - DELETE => [https://zuri-api.herokuapp.com/api/v1/user/destroy/:id](https://zuri-api.herokuapp.com)
     ![delete a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/delete_a_user_lzqp2w.png)
+
+
+## Author
+
+- [Chinedu Emesue](https://www.github.com/its-nedum)
+    - [@Twitter](https://www.twitter.com/its_nedum)
+    - [@LinkedIn](https://www.linkedin.com/in/chinedu-emesue)
+    - [@Facebook](https://www.facebook.com/itsnedum)
+    - [@Instagram](https://www.instagram.com/its_nedum)
+
+  
