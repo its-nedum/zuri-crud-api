@@ -108,22 +108,27 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
 ## API Testing with Postman - Screenshots
 - Create a user 
     - POST => `https://zuri-api.herokuapp.com/api/v1/user/create`
+
     ![create a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/create_a_user_jkqa3a.png)
 
 - Get a user
     - GET => `https://zuri-api.herokuapp.com/api/v1/user/get/:id`
+
     ![get a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/get_a_user_ix6kd0.png)
 
 - Get all users
     - GET => `https://zuri-api.herokuapp.com/api/v1/user/getAll`
+
     ![get all users image](https://res.cloudinary.com/its-nedum/image/upload/v1620495459/zuri/get_all_user_ls24v8.png)
 
 - Update a user
     - PUT => `https://zuri-api.herokuapp.com/api/v1/user/update/:id`
+
     ![update a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/update_a_user_g1go2o.png)
 
 - Delete a user
     - DELETE => `https://zuri-api.herokuapp.com/api/v1/user/destroy/:id`
+    
     ![delete a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/delete_a_user_lzqp2w.png)
 
 
