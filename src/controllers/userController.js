@@ -36,6 +36,13 @@ const createUser = async (req, res) => {
                 });
             };
 
+            // this will execute if the user already exists in the database
+            if (user === 'User already exists') {
+                return res.status(400).json({
+                    message: `User with email: ${email} already exists`
+                });
+            };
+
             // this will execute if the user creation was successful
             return res.status(201).json({
                 message: 'User created successfully',

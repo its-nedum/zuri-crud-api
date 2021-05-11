@@ -8,9 +8,18 @@ const User = require('../models/user');
  * @returns Object
  */
 const create = async (entries) => {
-    // create the user in the database
-    const user = await User.create(entries);
-    return user;
+
+    // check whether user already exists in the database using their email
+    const checkUser = await User.findOne({ email: entries.email });
+
+    if (checkUser) {
+        // notify that user already exists
+        return 'User already exists'
+    }else{
+        // create the user in the database
+        const user = await User.create(entries);
+        return user;
+    }
 };
 
 
