@@ -129,7 +129,7 @@ The API is hosted on heroku [https://zuri-api.herokuapp.com](https://zuri-api.he
 - Delete a user
     - DELETE => `https://zuri-api.herokuapp.com/api/v1/user/destroy/:id`
     
-    ![delete a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620495414/zuri/delete_a_user_lzqp2w.png)
+    ![delete a user image](https://res.cloudinary.com/its-nedum/image/upload/v1620756485/zuri/new_delete_zuri_tqz079.png)
 
 
 ## Author
