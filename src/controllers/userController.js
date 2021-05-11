@@ -32,7 +32,7 @@ const createUser = async (req, res) => {
             // this will execute if for any reason the user wasn't created
             if (!user) {
                 return res.status(400).json({
-                    message: 'Something went wrong, please try again'
+                    message: 'User not created, please try again'
                 });
             };
 
@@ -171,7 +171,7 @@ const updateUser = async (req, res) => {
             // this will execute if for any reason the user wasn't updated
             if (!user) {
                 return res.status(400).json({
-                    message: 'Something went wrong, please try again'
+                    message: 'User not updated, please try again'
                 });
             }
 
@@ -217,14 +217,13 @@ const destroyUser = async (req, res) => {
             // this will execute if the user was not deleted
             if (!user) {
                 return res.status(200).json({
-                    message: 'Something went wrong, please try again'
+                    message: 'User not found, please try again'
                 });
             };
 
             // this will execute if the user was deleted successfully
             return res.status(200).json({
                 message: 'User deleted successfully',
-                data: user,
             });
 
         } catch(error) {
