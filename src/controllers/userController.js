@@ -223,7 +223,7 @@ const destroyUser = async (req, res) => {
 
             // this will execute if the user was not deleted
             if (!user) {
-                return res.status(200).json({
+                return res.status(404).json({
                     message: 'User not found, please try again'
                 });
             };
